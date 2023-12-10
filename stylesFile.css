@@ -1,0 +1,161 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    overflow-x: hidden;
+    
+}
+
+/* Background style */
+.bg {
+    background-color: #FDFDFD;
+}
+
+.bg1 {
+    background-color: #F6F6F6
+}
+
+/* Header (1 and 2) styles */
+.h1 {
+    font-family: 'Viaoda Libre', serif;
+    color: #E30B0B;
+}
+
+.h2 {
+    font-family: 'vidaloka', serif;
+    color: #B40404;
+}
+
+/* Nav style */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0%;
+    background-color: #F6F6F6;
+}
+
+.RSVPnav {
+    font-size: 2em;
+    padding-left: 10px;
+    background-color: #F6F6F6;
+    transition: all .2s ease-in-out;
+}
+
+.RSVPnav:link {
+    font-family: 'Viaoda Libre', serif;
+    color: #E30B0B;
+    text-decoration: none;
+}
+
+.RSVPnav:visited {
+    font-family: 'Viaoda Libre', serif;
+    color: #E30B0B;
+    text-decoration: none;
+}
+
+.RSVPnav:hover {
+    font-family: 'Viaoda Libre', serif;
+    color: #E30B0B;
+    opacity: .8;
+    text-decoration: none;
+    transform: scale(1.2); 
+}
+
+.RSVPnav:active {
+    font-family: 'Viaoda Libre', serif;
+    color: #E30B0B;
+    text-decoration: none;
+}
+
+.Othernavscroll {
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #FDFDFD;
+    transition: all .2s ease-in-out;
+}
+
+.Othernavscroll:link {
+    font-family: 'vidaloka', serif;
+    color: #B40404;
+    text-decoration: none;
+    
+}
+
+.Othernavscroll:visited {
+    font-family: 'vidaloka', serif;
+    color: #B40404;
+    text-decoration: none;
+}
+
+.Othernavscroll:hover {
+    font-family: 'vidaloka', serif;
+    color: #B40404;
+    opacity: .8;
+    text-decoration: none;
+    transform: scale(1.1); 
+}
+
+.Othernavscroll:active {
+    font-family: 'vidaloka', serif;
+    color: #B40404;
+    text-decoration: none;
+}
+
+.Othernav {
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F6F6F6;
+    transition: all .2s ease-in-out;
+}
+
+.Othernav:link {
+    font-family: 'vidaloka', serif;
+    color: #B40404;
+    text-decoration: none;
+}
+
+.Othernav:visited {
+    font-family: 'vidaloka', serif;
+    color: #B40404;
+    text-decoration: none;
+}
+
+.Othernav:hover {
+    font-family: 'vidaloka', serif;
+    color: #B40404;
+    opacity: .8;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.Othernav:active {
+    font-family: 'vidaloka', serif;
+    color: #B40404;
+    text-decoration: none;
+}
+
+.heroImg {
+    width: 300px;
+    margin: 0%;
+    padding: 0%;
+    transition: all .3s ease-in-out;
+}
+
+.heroImg:hover {
+    transform: scale(1.05);
+}
+
+.grow {
+    transition: all .3s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.05);
+}
