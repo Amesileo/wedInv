@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Bodoni&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin-top: 0%;
+}
+
+.html {
+    margin: auto;
+    width: 100%;
+}
+
+.body {
+    min-width: 386px;
+    max-width: 768px;
+}
+
+.footer {
+    min-width: 386px;
+    max-width: 768px;
+}
+
+@media only screen and (max-width: 2560px) {
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3) 1fr;
+    }
+    
+    .wrapperMain {
+        display: grid;
+        grid-column: 1;
+    }
+    
+    .wrapperSub {
+        display: grid;
+        grid-column: 2;
+    }
+
+    .wrapperSub1 {
+        display: grid;
+        grid-column: 3;
+    }
+    
+    .column {
+        display: grid;
+        padding: 10px;
+    }
+    
+    .bghero {
+        background-image: url(./images/lucyAndGeorge.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -40px;
+        min-height: 368px;
+        width: 100%;
+    }
+    
+    .bghero1 {
+        background-image: url(./images/lucyAndGeorge2.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -0px;
+        min-height: 368px;
+        width: 100%;
+    }
+
+    .bghero2 {
+        background-image: url(./images/lucyAndGeorge1.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -40px;
+        min-height: 368px;
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #563030;
+        color: white;
+        font-family: "libre bodoni", serif;
+        font-weight:lighter;
+        font-size: smaller;
+        padding: 10px;
+    }
+
+    .navburgerwrapper {
+        display: block;
+        width: fit-content;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .navburger {
+        width: 20px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin: 4px 0;
+        pointer-events: none;
+    }
+
+    .accordiannav {
+        position: fixed;
+        display: none;
+        text-align: center;
+        width: calc(100% - 16px);
+        margin-top: 0px;
+    }
+    
+    .accordiannavitems a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .accordiannavitems:hover, .navburgerwrapper:hover{
+        opacity: .8;
+        transform: scale(1.1);
+    }
+      
+      #scrollToTopBtn {
+        justify-self: end;
+        border: none;
+        cursor: pointer;
+        background-color: #ffffff58;
+        font-size: 30px;
+        line-height: 48px;
+        width: 48px;
+      }
+    
+    .blue {
+        background-color: #3D3F55;
+    }
+    
+    .burg {
+        background-color: #563030;
+    }
+    
+    .burgpale {
+        background-color: #784a4a;
+    }
+    
+    .btnblue {
+        background-color: #1B234E;
+    }
+    
+    .btnburg {
+        background-color: #4E1B1B;
+    }
+    
+    .button {
+        border: 0px;
+        height: 60px;
+        min-width: fit-content;
+        margin: auto;
+        margin-bottom: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .button:hover {
+        transform: scale(1.2);
+    }
+    
+    .btntext {
+        font-family: 'italiana', serif;
+        text-decoration: none;color: white;
+        font-size: xx-large;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .bgleaves {
+        background-image: url(./images/autumnLeaves.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .bgdrop {
+        background-color: #4e1b1b89;
+        justify-self: center;
+        width: fit-content;
+        margin: 20px;
+    }
+    
+    .celebrate {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .h1, .h2, .h3, .textContent, .instructionContent {
+        text-align: center;
+        color: white;
+        font-weight:lighter;
+    }
+    
+    .h1 {
+        font-size: 58px;
+        font-family: 'italiana', serif;
+        margin: 0%;
+        padding:0;
+    }
+    
+    .h2 {
+        font-size: 38px;
+        font-family: 'italiana', serif;
+    }
+    
+    .h3 {
+        font-size: 32px;
+        font-family: 'libre-bodoni', serif;
+    }
+    
+    .center {
+        display: inline-block;
+        justify-self: center;
+    }
+
+    .textContent {
+        font-size: 20px;
+        font-family: 'libre-bodoni', serif;
+        line-height: 35px;
+        margin: 10px;
+    }
+
+    .textContent ul {
+        display: block;
+        text-align: left;
+        margin: auto;
+        padding-bottom: 0%;
+    }
+
+    .textContent ul li a {
+        text-align: left;
+        text-decoration: none;
+        color: inherit;
+        list-style-position: outside;
+    }
+    
+    .instructionContent {
+        margin-top: 10px;
+        font-size: 24px;
+        font-family: 'libre-bodoni', serif;
+    }
+    
+    .imgsize {
+        width:100%;
+        max-width: 2000px;
+        padding-top: 15px;
+        margin: auto;
+        justify-self: center;
+        align-self: center;
+    }
+    
+}
+
+@media only screen and (max-width: 890px) {
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2) 1fr;
+    }
+    
+    .wrapperMain {
+        display: grid;
+        grid-column: 1;
+    }
+    
+    .wrapperSub {
+        display: grid;
+        grid-column: 2;
+    }
+
+    .wrapperSub1 {
+        display: none;
+        grid-column: 3;
+    }
+    
+    .column {
+        display: grid;
+        padding: 10px;
+    }
+    
+    .bghero {
+        background-image: url(./images/lucyAndGeorge.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 0px;
+        min-height: 368px;
+        width: 100%;
+    }
+    
+    .bghero1 {
+        background-image: url(./images/lucyAndGeorge1.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 0px;
+        min-height: 368px;
+        width: 100%;
+    }
+
+    .bghero2 {
+        background-image: url(./images/lucyAndGeorge2.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 0px;
+        min-height: 368px;
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #563030;
+        color: white;
+        font-family: "libre bodoni", serif;
+        font-weight:lighter;
+        font-size: smaller;
+        padding: 10px;
+    }
+
+    .navburgerwrapper {
+        display: block;
+        width: fit-content;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .navburger {
+        width: 20px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin: 4px 0;
+        pointer-events: none;
+    }
+    
+    .accordiannav {
+        display: none;
+        text-align: center;
+        width: 100%;
+        width: calc(100% - 16px);
+        margin-top: 0px;
+    }
+    
+    .accordiannavitems a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .accordiannavitems:hover, .navburgerwrapper:hover{
+        opacity: .8;
+        transform: scale(1.1);
+    }
+      
+      #scrollToTopBtn {
+        justify-self: end;
+        border: none;
+        cursor: pointer;
+        background-color: #ffffff58;
+        font-size: 30px;
+        line-height: 48px;
+        width: 48px;
+      }
+    
+    .blue {
+        background-color: #3D3F55;
+    }
+    
+    .burg {
+        background-color: #563030;
+    }
+    
+    .burgpale {
+        background-color: #784a4a;
+    }
+    
+    .btnblue {
+        background-color: #1B234E;
+    }
+    
+    .btnburg {
+        background-color: #4E1B1B;
+    }
+    
+    .button {
+        border: 0px;
+        height: 60px;
+        min-width: fit-content;
+        margin: auto;
+        margin-bottom: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .button:hover {
+        transform: scale(1.2);
+    }
+
+    .btntext {
+        font-family: 'italiana', serif;
+        text-decoration: none;color: white;
+        font-size: xx-large;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .bgleaves {
+        background-image: url(./images/autumnLeaves.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .bgdrop {
+        background-color: #4e1b1b89;
+        justify-self: center;
+        margin: 20px;
+    }
+    
+    .celebrate {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .h1, .h2, .h3, .textContent, .instructionContent {
+        text-align: center;
+        color: white;
+        font-weight:lighter;
+    }
+    
+    .h1 {
+        font-size: 58px;
+        font-family: 'italiana', serif;
+        margin: 0%;
+        padding:0;
+    }
+    
+    .h2 {
+        font-size: 38px;
+        font-family: 'italiana', serif;
+    }
+    
+    .h3 {
+        font-size: 32px;
+        font-family: 'libre-bodoni', serif;
+    }
+    
+    .center {
+        display: inline-block;
+        justify-self: center;
+    }
+
+    .textContent {
+        font-size: 20px;
+        font-family: 'libre-bodoni', serif;
+        line-height: 35px;
+        margin: 10px;
+    }
+
+    .textContent ul {
+        display: block;
+        text-align: left;
+        margin: auto;
+        padding-bottom: 0%;
+    }
+
+    .textContent ul li a {
+        text-align: left;
+        text-decoration: none;
+        color: inherit;
+        list-style-position: outside;
+    }
+    
+    .instructionContent {
+        margin-top: 10px;
+        font-size: 24px;
+        font-family: 'libre-bodoni', serif;
+    }
+    
+    .imgsize {
+        width:100%;
+        max-width: 2000px;
+        padding-top: 15px;
+        margin: auto;
+        justify-self: center;
+        align-self: center;
+    }
+    
+}
+
+@media only screen and (max-width: 550px) {
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .wrapperMain {
+        display: grid;
+        grid-column: 1;
+    }
+
+    .wrapperSub {
+        display: none;
+        grid-column: 2;
+    }
+
+    .wrapperSub1 {
+        display: none;
+        grid-column: 3;
+    }
+
+    .column {
+        display: grid;
+        padding: 10px;
+    }
+
+    .bghero {
+        background-image: url(./images/lucyAndGeorge.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 0px;
+        min-height: 368px;
+        width: 100%;
+    }
+
+    .bghero1 {
+        background-image: url(./images/lucyAndGeorge1.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 0px;
+        min-height: 368px;
+        width: 100%;
+    }
+
+    .bghero2 {
+        background-image: url(./images/lucyAndGeorge2.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 0px;
+        min-height: 368px;
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #563030;
+        color: white;
+        font-family: "libre bodoni", serif;
+        font-weight:lighter;
+        font-size: smaller;
+        width: calc(100% - 36px);
+        opacity: 1;
+        position: fixed;
+    }
+
+    .navburgerwrapper {
+        display: block;
+        width: fit-content;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .navburger {
+        width: 20px;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        margin: 4px 0;
+        pointer-events: none;
+    }
+
+    .accordiannav {
+        position: fixed;
+        display: none;
+        text-align: center;
+        width: calc(100% - 16px);
+        margin-top: 42px;
+    }
+    
+    .accordiannavitems a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .accordiannavitems:hover, .navburgerwrapper:hover{
+        opacity: .8;
+        transform: scale(1.1);
+    }
+      
+      #scrollToTopBtn {
+        justify-self: end;
+        border: none;
+        cursor: pointer;
+        background-color: #ffffff58;
+        font-size: 30px;
+        line-height: 48px;
+        width: 48px;
+      }
+    
+    .blue {
+        background-color: #3D3F55;
+    }
+    
+    .burg {
+        background-color: #563030;
+    }
+    
+    .burgpale {
+        background-color: #784a4a;
+    }
+    
+    .btnblue {
+        background-color: #1B234E;
+    }
+    
+    .btnburg {
+        background-color: #4E1B1B;
+    }
+    
+    .button {
+        border: 0px;
+        height: 60px;
+        min-width: fit-content;
+        margin: auto;
+        margin-bottom: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .button:hover {
+        transform: scale(1.2);
+    }
+    
+    .btntext {
+        font-family: 'italiana', serif;
+        text-decoration: none;color: white;
+        font-size: xx-large;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .bgleaves {
+        background-image: url(./images/autumnLeaves.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .bgdrop {
+        background-color: #4e1b1b89;
+        justify-self: center;
+        margin: 20px;
+    }
+    
+    .celebrate {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .h1, .h2, .h3, .textContent, .instructionContent {
+        text-align: center;
+        color: white;
+        font-weight:lighter;
+    }
+    
+    .h1 {
+        font-size: 58px;
+        font-family: 'italiana', serif;
+        margin: 0%;
+        padding:0;
+    }
+    
+    .h2 {
+        font-size: 38px;
+        font-family: 'italiana', serif;
+    }
+    
+    .h3 {
+        font-size: 32px;
+        font-family: 'libre-bodoni', serif;
+    }
+    
+    .center {
+        display: inline-block;
+        justify-self: center;
+    }
+
+    .textContent {
+        font-size: 20px;
+        font-family: 'libre-bodoni', serif;
+        line-height: 35px;
+        margin: 10px;
+    }
+
+    .textContent ul {
+        display: block;
+        text-align: left;
+        margin: auto;
+        padding-bottom: 0%;
+    }
+
+    .textContent ul li a {
+        text-align: left;
+        text-decoration: none;
+        color: inherit;
+        list-style-position: outside;
+    }
+    
+    .instructionContent {
+        margin-top: 10px;
+        font-size: 24px;
+        font-family: 'libre-bodoni', serif;
+    }
+    
+    .imgsize {
+        width:100%;
+        max-width: 2000px;
+        padding-top: 15px;
+        margin: auto;
+        justify-self: center;
+        align-self: center;
+    }
+
+}
